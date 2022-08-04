@@ -40,4 +40,13 @@ you amy face some problem & here is the solutions
 
 ![alt text](picture3)
 ## Install arduino
+<br/> The arduino intallation in ubuntu is different from windows, the next is the guide for arduino intallation
+<br/> * first make sure the ubuntu package are updated by typing the next command
+<br/> ```$ sudo apt update```
+<br/> ```$ sudo apt upgrade```
+<br/> * Scond download the arduino IDE extract 
+<br/> download the arduino from the website [Arduino IDE](https://www.arduino.cc/en/software)
+<br/> 
+
+
 ## Install rosserial lib
