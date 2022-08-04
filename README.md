@@ -38,15 +38,32 @@ you amy face some problem & here is the solutions
 <br/> ```$ cd catkin/src/arduino_robot_arm/robot_arm_pkg/scripts```//to go to script directory
 <br/> ```$ sudo chmod +x joint_states_to_gazebo.py```
 
-![alt text](picture3)
+![alt text](picture5)
 ## Install arduino
 <br/> The arduino intallation in ubuntu is different from windows, the next is the guide for arduino intallation
-<br/> * first make sure the ubuntu package are updated by typing the next command
+<br/> * first: make sure the ubuntu package are updated by typing the next command
 <br/> ```$ sudo apt update```
 <br/> ```$ sudo apt upgrade```
-<br/> * Scond download the arduino IDE extract 
-<br/> download the arduino from the website [Arduino IDE](https://www.arduino.cc/en/software)
-<br/> 
-
+<br/> * Scond: download the arduino IDE extract 
+<br/> download the arduino from the website [Arduino IDE](https://www.arduino.cc/en/software) & put it in folder called arduino
+<br/> or by the typing the next commands 
+<br/> ```$ mkdir arduino``` // to make folder called arduino
+<br/> ```$ cd arduino/```// to go to arduino directory
+<br/> ```$ wget https://downloads.arduino.cc/arduino-1.8.19-linux64.tar.xz``` // to download the arduino IDE 
+<br/> * Third: extract the tar.xz file by the typing in the terminal 
+<br/> ```$ tar -xvf ./arduino-1.8.19-linux64.tar.xz``` 
+<br/> finaly: install the arduino IDE by typing the following commands
+<br/>```$ cd arduino-1.8.19/``` //to go to arduino-1.8.19 directory
+<br/>```$ sudo ./install.sh``` // installing the arduino
+<br/> ![alt text](picture6)
 
 ## Install rosserial lib
+Here is the guide for installing the rosserial library
+<br/> which allow the arduino to communicate with ros by the serial communication
+<br/> by typing the next commands 
+<br/>```$ sudo apt-get install ros-noetic-rosserial-arduino```//
+<br/>```$ sudo apt-get install ros-noetic-rosserial```//
+<br/>```$ cd arduino/arduino-1.8.19/libraries```// to go to arduino libraries directory 
+<br/>```$ rm -rf ros_lib```// remove ros_lib if it presented before
+<br/>```$ rosrun rosserial_arduino make_libraries.py .```//install ros_lib
+<br/> ![alt text](picture7)
